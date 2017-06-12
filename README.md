@@ -1,10 +1,10 @@
 yii2-curl extension
 ===================
-[![Latest Stable Version](https://poser.pugx.org/linslin/yii2-curl/v/stable)](https://packagist.org/packages/linslin/yii2-curl)
-[![Latest Master Build](https://api.travis-ci.org/linslin/Yii2-Curl.svg?branch=master)](https://travis-ci.org/linslin/Yii2-Curl/builds)
-[![Test Coverage](https://codeclimate.com/github/linslin/Yii2-Curl/badges/coverage.svg)](https://codeclimate.com/github/linslin/Yii2-Curl/coverage)
-[![Total Downloads](https://poser.pugx.org/linslin/yii2-curl/downloads)](https://packagist.org/packages/linslin/yii2-curl)
-[![License](https://poser.pugx.org/linslin/yii2-curl/license)](https://packagist.org/packages/linslin/yii2-curl)
+[![Latest Stable Version](https://poser.pugx.org/alkurn/yii2-curl/v/stable)](https://packagist.org/packages/alkurn/yii2-curl)
+[![Latest Master Build](https://api.travis-ci.org/alkurn/Yii2-Curl.svg?branch=master)](https://travis-ci.org/alkurn/Yii2-Curl/builds)
+[![Test Coverage](https://codeclimate.com/github/alkurn/Yii2-Curl/badges/coverage.svg)](https://codeclimate.com/github/alkurn/Yii2-Curl/coverage)
+[![Total Downloads](https://poser.pugx.org/alkurn/yii2-curl/downloads)](https://packagist.org/packages/alkurn/yii2-curl)
+[![License](https://poser.pugx.org/alkurn/yii2-curl/license)](https://packagist.org/packages/alkurn/yii2-curl)
                    
 Easy working cURL extension for Yii2, including RESTful support:
 
@@ -28,7 +28,7 @@ Installation
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
 ```bash
-php composer.phar require --prefer-dist linslin/yii2-curl "*"
+php composer.phar require --prefer-dist alkurn/yii2-curl "*"
 ```
 
 
@@ -151,8 +151,8 @@ Changelog
 - Fully added functionalTests for 100% coverage. 
 
 ##### Release 1.1.2 - Changelog
-- Fixed https://github.com/linslin/Yii2-Curl/issues/59
-- Fixed https://github.com/linslin/Yii2-Curl/issues/57
+- Fixed https://github.com/alkurn/Yii2-Curl/issues/59
+- Fixed https://github.com/alkurn/Yii2-Curl/issues/57
 
 ##### Release 1.1.1 - Changelog
 - Fixed wrong parameter parsing into `_httpRequest()` (thanks to yemexx1)
@@ -164,10 +164,10 @@ Changelog
 - Added `setGetParams() [array]` helper.
 - Added `setRequestBody() [string]` helper.
 - Added `getUrl()` helper.
-- Added API attribute `errorText [string|null]` - holds a string describing the given error code - https://github.com/linslin/Yii2-Curl/issues/49.
+- Added API attribute `errorText [string|null]` - holds a string describing the given error code - https://github.com/alkurn/Yii2-Curl/issues/49.
 - Added functionTests to ensure stability.
-- Allow PHP class goodness - https://github.com/linslin/Yii2-Curl/issues/52.
-- Fixed header explode - https://github.com/linslin/Yii2-Curl/pull/51.
+- Allow PHP class goodness - https://github.com/alkurn/Yii2-Curl/issues/52.
+- Fixed header explode - https://github.com/alkurn/Yii2-Curl/pull/51.
 
 ##### Release 1.0.11 - Changelog
 - Added API attribute `responseHeaders [array|null]` which returns an array of all response headers. 
@@ -175,19 +175,19 @@ Changelog
 - Profile debugging is only active if constant `YII_DEBUG` is `true`.
 
 ##### Release 1.0.10 - Changelog
-- Fixed PHP notice https://github.com/linslin/Yii2-Curl/issues/39.
+- Fixed PHP notice https://github.com/alkurn/Yii2-Curl/issues/39.
 
 ##### Release 1.0.9 - Changelog
 - Added API attribute `responseCode [string|null]` which holds the HTTP response code.
 - Added API attribute `responseCharset [string|null]` which holds the response charset.
 - Added API attribute `responseLength [integer|null]` which holds the response length.
 - Added API attribute `errorCode` which holds the a integer code error like described here: https://curl.haxx.se/libcurl/c/libcurl-errors.html.
-- Fixed Issue https://github.com/linslin/Yii2-Curl/issues//36.
-- Fixed Issue https://github.com/linslin/Yii2-Curl/issues//37 and removed exception throwing on curl fail. This allow the user to handle the error while using attribute `errorCode`.
+- Fixed Issue https://github.com/alkurn/Yii2-Curl/issues//36.
+- Fixed Issue https://github.com/alkurn/Yii2-Curl/issues//37 and removed exception throwing on curl fail. This allow the user to handle the error while using attribute `errorCode`.
 
 ##### Release 1.0.8 - Changelog
 - Added API method `setOptions([array])` which allows to setup multiple options at once. 
-- Fixed Issue https://github.com/linslin/Yii2-Curl/issues/30.
+- Fixed Issue https://github.com/alkurn/Yii2-Curl/issues/30.
 
 ##### Release 1.0.7 - Changelog
 - Fixed `getInfo([, int $opt = 0 ])` exception were cURL wasn't initialized before calling `getInfo($opt)`.
@@ -197,15 +197,15 @@ Changelog
 
 ##### Release 1.0.5 - Changelog
 - Made `body` callback not depending on HTTP-Status codes anymore. You can retrieve `body` data on any HTTP-Status now. 
-- Fixed Issue https://github.com/linslin/Yii2-Curl/issues/19 where override default settings break options.
+- Fixed Issue https://github.com/alkurn/Yii2-Curl/issues/19 where override default settings break options.
 - Added timeout response handling. `$curl->responseCode = 'timeout'`
 
 ##### Release 1.0.4 - Changelog
-- `CURLOPT_RETURNTRANSFER` is now set to true on default - https://github.com/linslin/Yii2-Curl/issues/18 
+- `CURLOPT_RETURNTRANSFER` is now set to true on default - https://github.com/alkurn/Yii2-Curl/issues/18 
 - Readme.md adjustments.
 
 ##### Release 1.0.3 - Changelog
-- Fixed override of user options. https://github.com/linslin/Yii2-Curl/pull/7 
+- Fixed override of user options. https://github.com/alkurn/Yii2-Curl/pull/7 
 - Nice formatted PHP-examples. 
 - Moved `parent::init();` behavior into unitTest Controller.
 
