@@ -28,7 +28,7 @@ Installation
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
 ```bash
-php composer.phar require --prefer-dist alkurn/yii2-curl "*"
+php composer.phar require --prefer-dist alkurn/yii2-curl "dev-master"
 ```
 
 
