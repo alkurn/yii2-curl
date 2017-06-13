@@ -31,6 +31,9 @@ The preferred way to install this extension is through [composer](http://getcomp
 php composer.phar require --prefer-dist alkurn/yii2-curl "dev-master"
 ```
 
+```bash
+composer require --prefer-dist alkurn/yii2-curl "dev-master"
+```
 
 Usage
 -----
